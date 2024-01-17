@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdditionalController;
+use App\Http\Controllers\BottomController;
 use App\Http\Controllers\OutfitController;
-use App\Models\Additional;
-use App\Models\Bottom;
-use App\Models\Upper;
-use App\Models\User;
+use App\Http\Controllers\UpperController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,10 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('/users', User::class);
-Route::apiResource('/uppers', Upper::class);
-Route::apiResource('/bottoms', Bottom::class);
-Route::apiResource('/additionals', Additional::class);
+Route::apiResource('/users', UserController::class);
+Route::apiResource('/uppers', UpperController::class);
+Route::apiResource('/bottoms', BottomController::class);
+Route::apiResource('/additionals', AdditionalController::class);
 
 Route::get('/outfits', [OutfitController::class, 'index']);
 Route::get('/outfits/{user_id}/{upper_id}/{bottom_id}', [OutfitController::class, 'show']);
