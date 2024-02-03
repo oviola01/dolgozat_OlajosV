@@ -22,21 +22,21 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Outfit::create([
-            'user_id' => 1, 
-            'upper_id' => 2,
-            'bottom_id' => 2,
-            'status' => true,
-            'additional_id' => 2, 
-        ]);
+        // Outfit::create([
+        //     'user_id' => 1, 
+        //     'upper_id' => 2,
+        //     'bottom_id' => 2,
+        //     'status' => true,
+        //     'additional_id' => 2, 
+        // ]);
 
-        Outfit::create([
-            'user_id' => 2, 
-            'upper_id' => 1,
-            'bottom_id' => 1,
-            'status' => true,
-            'additional_id' => 1, 
-        ]);
+        // Outfit::create([
+        //     'user_id' => 2, 
+        //     'upper_id' => 1,
+        //     'bottom_id' => 1,
+        //     'status' => true,
+        //     'additional_id' => 1, 
+        // ]);
     }
 
     /**

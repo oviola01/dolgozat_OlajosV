@@ -28,6 +28,24 @@ return new class extends Migration
             'name' => "trikó", 
             'description' => "kosaras manusoknak", 
         ]);
+        Upper::create([
+            'name' => "pulóver2", 
+            'description' => "meleg, belebújós", 
+        ]);
+
+        Upper::create([
+            'name' => "trikó2", 
+            'description' => "kosaras manusoknak", 
+        ]);
+        Upper::create([
+            'name' => "pulóver3", 
+            'description' => "meleg, belebújós", 
+        ]);
+
+        Upper::create([
+            'name' => "trikó3", 
+            'description' => "kosaras manusoknak", 
+        ]);
     }
 
     /**
